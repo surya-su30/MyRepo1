@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moms Fitness Club</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto+Condensed:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            /* CSS Reset */
+            font-family: 'Roboto Condensed', sans-serif;
+            padding: 0px;
+            background-image: url(img/bg.jpg);
+            background-attachment: fixed;
+            /* background-repeat: no-repeat; */
+            background-position: top;
+            background-size: 85%;
+            
+
+            color: white;
+        }
+
+        .left {
+            position: absolute;
+            left: 20px;
+            top: 12px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            line-height: 16px;
+            font-size: 18px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .left img {
+            width: 100px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            display: block;
+            margin: 38px auto;
+            width: 50%;
+            /* border: 2px solid red; */
+            font-size: 12px;
+        }
+
+        .right {
+            position: absolute;
+            top: 40px;
+            right: 63px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            line-height: 5px;
+            font-size: 12px
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 25px 25px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .btn {
+            margin: 0px 5px;
+            padding: 5px 14px;
+            border: solid rgb(0, 0, 0);
+            background-color: rgb(247, 6, 6);
+            border-radius: 1em;
+            color: white;
+            font-size: 18px;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        button:hover {
+            background-color: rgb(4, 6, 37);
+            border: solid;
+        }
+
+        .container {
+            border: 4px solid grey;
+            margin: 153px 16px;
+            padding: 65px 88px;
+            width: 30%;
+            border-radius: 26px;
+        }
+
+        .form-group input {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            display: block;
+            width: 353px;
+            padding: 5px;
+            margin: 2px auto;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        .container h1 {
+            display: block;
+
+            text-align: center;
+        }
+
+        .container button {
+            width: 34%;
+            display: block;
+            margin: 11px Auto;
+            padding: 5px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Monks Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="Aboutus.html">About us</a></li>
+                <li><a href="https://www.calculator.net/bmi-calculator.html">BMI</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Sign Up</buttuon>
+                <button class="btn">Email us</buttuon>
+        </div>
+    </header>
+    <div class="container">
+        <h1 style="color: rgb(44, 44, 241);">Fill this Form to join Monks Fitness</h1>
+        <form action="Submit.html">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <button class="btn" >Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
